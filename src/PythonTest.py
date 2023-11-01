@@ -217,3 +217,7 @@ print(odd_numbers)
 print(list(odd_numbers))
 
 """
+
+import os
+
+os.environ
