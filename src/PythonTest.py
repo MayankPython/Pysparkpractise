@@ -218,6 +218,44 @@ print(list(odd_numbers))
 
 """
 
-import os
+# #Increase the file size.
+#
+# raw_attachment = "C:/Users/Mayank_Pandey/Desktop/EPAM Docs/Mayank_Pandey _DA Onbording Links.xlsx"
+# with open(raw_attachment, 'rb') as fp:
+#     raw_attachment_data = fp.read()
+#     append_data = raw_attachment_data
+#     print(type(raw_attachment_data))
+# print("length before append - ", len(raw_attachment_data))
+#
+# raw_attachment_data += append_data
+#
+# print("length after size increase", len(raw_attachment_data))
 
-os.environ
+# if "mayank" == "Mayank":
+#     print("case insensitive")
+# else:
+#     print("case sensitive")
+
+
+# test_string = "123456789"[:7]
+# print(test_string)
+
+
+class Animal():
+
+    def __init__(self,param1):
+        print("Animal is created.")
+        self.param1 = param1
+
+    def who_am_i(self):
+        print("I am a animal.")
+
+class Dog(Animal):
+
+    def __init__(self,param1,param2):
+        Animal.__init__(self, param1)
+        self.param2 = param2
+        print("Dog is created")
+
+my_dog = Dog(10, 20)
+
