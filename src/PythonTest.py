@@ -21,9 +21,9 @@ df3 = df1.union(df2).sort(df1.name).withColumnRenamed("home_phone", "phone").sho
 #df3.dropDuplicates().show()
 """
 
-"""
-#pyramid = int(input("enter the pyramid base: "))
 
+#pyramid = int(input("enter the pyramid base: "))
+"""
 def right_trangle(n):
 
     mylist = []
@@ -176,8 +176,48 @@ for i in thislist:
 
 print(total)
 """
+"""
 def myfunc(x):
     return x[-1]
 thislist = ['April', 'May', 'June']
 thislist.sort(key=myfunc)
 print(thislist)
+"""
+"""
+x = "hello"
+assert x == "hello"
+"""
+"""
+def my_function(*kids):
+#kids is received as tuple.
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
+
+"""
+"""
+def my_function(**kid):
+  #kid is received as dictionary.
+  print("His last name is " + kid["lname"])
+
+my_function(fname = "Tobias", lname = "Refsnes")
+
+"""
+"""
+def filter_odd(numbers):
+
+   for number in range(numbers):
+
+       if(number%2!=0):
+
+           yield number
+
+odd_numbers = filter_odd(20)
+print(odd_numbers)
+print(list(odd_numbers))
+
+"""
+
+import os
+
+os.environ
